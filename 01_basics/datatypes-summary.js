@@ -39,3 +39,25 @@ console.log(typeof myFunction);
 //type of function is object function 
 console.log(typeof heroes);
 console.log(typeof anotherId);
+
+// ********************************
+//stack memory =>  used in primitive data types , here we get copy of value ,,,,, heap memory => used in non primitive data types , in this we get reference of original value 
+
+let myYoutubename= "Akansha Sindhu"
+let anothername = myYoutubename
+anothername="chaiaurcode";
+console.log(anothername);
+console.log(myYoutubename);
+//here only anothername changed as here only copy of myYoutubename was used  //here the primitive data typpes uses stack memory so all the changes will be made to original value
+
+let userOne ={
+    email: "user@google.com",
+    upi:"user@ybl"
+}
+//here the function uses heap memory so all the changes will be made to original value
+let userTwo =userOne
+userTwo.email="Akansha@google.com"
+
+console.log(userOne.email );
+console.log(userTwo.email);
+//jab userTwo ki email change ki toh userOne ki email bhi change ho gayi : call by reference : heap memory 
