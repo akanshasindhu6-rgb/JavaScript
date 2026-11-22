@@ -14,3 +14,18 @@ console.log(hundreds.toLocaleString());//it willmake number easier to read from 
 //for indian number system use console.log(hundreds.toLocaleString('en-IN'));
 
 //++++++++++++++++++MATHS++++++++++++++++++
+console.log(Math);
+console.log(Math.abs(4));
+console.log(Math.round(4.3)); // round the value to nearest 
+console.log(Math.ceil(4.4)); //give nearest upper value
+console.log(Math.floor(4.2)); // gives nearest lower value 
+console.log(Math.min(4, 3 ,6 ,7));
+console.log(Math.max(4 ,3 ,6 ,7));
+console.log(Math.random()); //gives a random value between 0 and 1 inclusively
+console.log((Math.random()*10)+1); //shift the decimal and values will be like 0.53545 , 3.4555 , to avoid case like 0.0475 we will do a +1 so the min value is 1 now not 0
+
+//to get a number without digits after decimal use floor function
+console.log(Math.floor((Math.random()*10) +1));
+const min =10 
+const max = 20
+console.log(Math.floor(Math.random()*(max-min+1))+min);
