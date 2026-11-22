@@ -1,9 +1,11 @@
 const name ="Akansha"
+
 const repoCount=50
 console.log(name +" "+ repoCount + " Value" );
 //we will not use this syntax ...we wil use back ticks (string interpolation)
 
-console.log(`Hello my name is ${name.toUpperCase()} and my repo count is ${repoCount} `) //string interpolation
+console.log(`Hello my name is ${name.toUpperCase()} and my repo count is ${repoCount} `) 
+// string interpolation
 
 // const name ="Akansha"  string declaration method one
 //here we use objects of javascript and give name in its constructor here object is String ans Constructor is (`  `) inside back ticks is name or value of the variaable
